@@ -8,7 +8,7 @@ Students will complete weekly projects following the assignment instructions and
 
 To complete this assignment, follow these steps:  
 
-1. Read **Chapters 1-3** in the textbook.  
+1. Read **Chapters 1-3** in the textbook  
 2. Review the attached articles linked below.  
 3. Copy and paste the provided script into an **HTML text editor** (such as VS Code).  
 4. Do **not** add any CSS styles (except those explicitly required), images, or JavaScript. This assignment should focus solely on **HTML markup**.  
