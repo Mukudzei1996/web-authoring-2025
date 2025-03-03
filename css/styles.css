@@ -6,6 +6,17 @@
 #091D34
 */
 
+/*
+#E1ECF9 for body background:
+Rationale: A very light, soft blue. Provides a clean and calming background. It's easier on the eyes than pure white.
+
+#091D34 for body text:
+Rationale: Offers excellent contrast against the light background, ensuring readability. A softer alternative to black, reducing eye strain.
+
+Blue for link color:
+Rationale: A standard, recognizable link color. It clearly indicates clickable elements. The hover effect reinforces this.
+*/
+
 /* Default styles for all pages */
 body {
     font-family: 'Arial', Helvetica, sans-serif;
@@ -23,7 +34,7 @@ background: linear-gradient(to right,  #609ce1 0%,#2989d8 29%,#133863 71%);
 
 /* Default link color */
 a:link {
-    color: #091D34; 
+    color: blue; 
     text-decoration: none;
 }
 
