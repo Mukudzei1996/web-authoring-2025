@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     border-color: #091D34;
     border-style: solid;
@@ -5,6 +9,10 @@ header {
     border-radius: 10px;
     padding: 20px;
     height: 300px;
+}
+
+h1{
+    margin: 10px;;
 }
 
 body {
@@ -20,10 +28,6 @@ figure {
     box-sizing: border-box;
     float: left;
     position: relative;
-    border-color: #091D34;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
     padding: 20px;
     width: 43% 
 }
@@ -43,6 +47,11 @@ figure {
     max-width: 550px;
     min-width: 200px;
     height: auto;
+    border-color: #091D34;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0px;
+    padding: 0px;
 }
 
 footer {
