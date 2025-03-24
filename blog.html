@@ -8,13 +8,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <title>My Blog</title>
     </head>
     <!-- Some of the content was generated with the help of AI -->
     <body>
         <header>
-           <h1><em>My Blog</em></h1>
+           <h1>Mukudzei Blog</h1>
            <nav>
                 <ul id="nav">
                     <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
@@ -22,11 +23,15 @@
                     <li><a href="media.html"><i class="fa-solid fa-play"></i>Media</a></li>
                 </ul>
             </nav>
+            <img id="logo" src="images/logo.sm.png" alt="logo">
         </header>
         <main>
-            <Article>
+            <Article class="first">
                 <h2>What is Web Development? A Complete 2025 Beginner's Guide</h2>
-                <img src="images/Article2.webp" alt="Web development market in 2023" height ="300" width="600">
+                <figure>
+                    <img id="image1" src="images/Article2.webp" alt="Web development market in 2023">
+                    <figcaption> The Web Development Job Market</figcaption>
+                </figure> 
                 <p><a href="https://careerfoundry.com/en/blog/web-development/what-is-web-development/" target="_blank">Article link</a></p>
                 <h3>Summary</h3>
                 <p>Web development involves building and maintaining websites and web applications, encompassing frontend (UI/UX),
@@ -44,10 +49,13 @@
                     developers in an ever-growing and in-demand field.</p>
              </Article>
 
-          <Article>
+          <Article class="second">
              <h2>Can Traditional Web Development Survive AI?</h2>
-             <img src="images/Article1.jpg" alt="The concept of the human brain" height ="300" width="600">
-             <p><a href="https://www.cmswire.com/digital-experience/can-traditional-web-development-survive-ai/" target="_blank">Article link</a></p>
+             <figure>
+                <img id="image2" src="images/Article1.jpg" alt="The concept of the human brain">
+                <figcaption>Balancing Logic and Creativity</figcaption>
+            </figure>
+                <p><a href="https://www.cmswire.com/digital-experience/can-traditional-web-development-survive-ai/" target="_blank">Article link</a></p>
              <h3>Summary</h3>
             <p>The article "Can Traditional Web Development Survive AI?" explores how artificial intelligence (AI) is transforming
                 the web development landscape. AI automates routine tasks, such as coding and debugging, allowing developers to
@@ -65,9 +73,12 @@
                 evolving digital space.</p>
           </Article>
 
-         <Article>
+         <Article class="third">
             <h2>Create Your First Local HTML/CSS Project</h2>
-            <img src="images/Article3.png" alt="Creating html webpage on computer" height ="300" width="300">
+            <figure>
+                <img id="image3" src="images/Article3.png" alt="Creating html webpage on computer">
+                <figcaption>Kickstart Your Web Design: Your First Local HTML/CSS Project</figcaption>
+            </figure>
             <p><a href="https://www.codecademy.com/article/f1-u2-create-first-prj" target="_blank">Article link</a></p>
             <h3>Summary</h3>
             <p>The article "Create Your First Local HTML/CSS Project" from Codecademy provides a step-by-step guide for beginners to
@@ -84,9 +95,12 @@
                 outside of online environments.</p>
          </Article>
 
-         <Article>
+         <Article class="fourth">
             <h2>Creating a Website on GitHub Pages</h2>
-            <img src="images/Article4.png" alt="Github logo" height ="300" width="300">
+            <figure>
+                <img id="image4" src="images/Article4.png" alt="Github logo">
+                <figcaption>Github logo</figcaption>
+            </figure>
             <p><a href="https://www.codecademy.com/article/creating-a-website-on-github-pages" target="_blank">Article link</a></p>
             <h3>Summary</h3>
             <p>The article explains how to create a website using GitHub Pages, which allows you to host a site for free. It covers
