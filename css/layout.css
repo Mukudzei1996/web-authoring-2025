@@ -24,7 +24,7 @@ body {
     padding: 20px;
 }
 
-figure {
+.figureblog {
     box-sizing: border-box;
     float: left;
     position: relative;
@@ -62,3 +62,44 @@ footer {
     padding: 10px;
  
 }
+
+.navflex{
+    display: flex; 
+    justify-content: flex-start; 
+
+    padding: 30px;
+}
+
+.nav-items{
+padding: 10px;
+}
+
+.sign-in {
+    margin-left: auto;
+}
+
+.team{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex: 0 1 auto;
+}
+
+.member{    
+    border-style: solid;
+    border-color: #091D34;
+    border-radius: 10px;
+    border-width: 2px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+  }
+
+ 
