@@ -37,6 +37,7 @@ background: linear-gradient(to right,  #609ce1 0%,#2989d8 29%,#133863 71%);
 a:link {
     color: blue; 
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* Visited link */
@@ -61,10 +62,16 @@ nav {
     font-size: 30px;
     font-weight: normal;
 }
-.nav {
-    list-style-type: none;
-  }
 
+.aside{
+    font-family: 'Georgia', Verdana, serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.contents{
+    text-align: center;
+}
 /* Styles for h1,h2, h3, p and ul elements */
 
 h1 {
@@ -110,6 +117,7 @@ p {
 
 ul {
     color: #091D34;
+    list-style: none;
 }
 
 figcaption {

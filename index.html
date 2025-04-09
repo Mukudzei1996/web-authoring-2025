@@ -13,25 +13,42 @@
         <title>My Introduction</title>
     </head>
     <!-- Some of the content was generated with the help of AI -->
-    <body>
-        <header>
+    <body class="grid_container">
+        <header class="header">
            <h1><em>Welcome To My Page</em></h1>
-           <nav class="navflex">
-                <a href="index.html" class="nav-items"><i class="fa-solid fa-house"></i>Home</a>
-                <a href="blog.html" class="nav-items"><i class="fa-solid fa-blog"></i>Blog</a>
-                <a href="media.html" class="nav-items"><i class="fa-solid fa-play"></i>Media</a>
-                <a href="team.html" class="nav-items"><i class="fa-solid fa-user"></i>Team</a>
-                <a href="teams.html" class="sign-in"><i class="fa-solid fa-user"></i>Sign In</a>
-            </nav>
             <img id="logo" src="images/logo.sm.png" alt="logo">
         </header>
-        <main>
+        <nav class="navigation">
+            <h2>Navigation Menu</h2>
+            <ul>
+                <li class="nav-list"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li class="nav-list"><a href="blog.html"><i class="fa-solid fa-blog"></i>Blog</a></li>
+                <li class="nav-list"><a href="media.html"><i class="fa-solid fa-play"></i>Media</a></li>
+                <li class="nav-list"><a href="team.html"><i class="fa-solid fa-user"></i>Team</a></li>
+                <li class="nav-list"><a href="teams.html" class="sign-in"><i class="fa-solid fa-user"></i>Sign In</a></li>
+            </ul>
+        </nav>
+
+        <aside class="aside">
+            <h2 class="contents">Contents</h2>
+            <ul>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#career_goals">Career Goals</a></li>
+                <li><a href="#past_cousework">Past Cousework</a></li>
+                <li><a href="#reasons">Reasons For Taking This Class</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+            </ul>
+
+        </aside>
+
+        <main class="main">
             <h2>About Me</h2>
             <figure>
-            <img id="profpic" src="images/chisenwa.jpg.JPG" alt="Mukudzei Chisenwa Profile picture.png">
+            <img id="profpic" src="images/chisenwa.jpg.JPG" alt="Mukudzei Chisenwa Profile picture.png" height="300" width="300">
             <figcaption>Mukudzei Chisenwa</figcaption>
             </figure>
-            <section>
+            <section id="background">
                 <h2>Background</h2>
                 <p>My name is Mukudzei Chisenwa, and I have always been fascinated by technology and its ability to transform the way we interact
                     with the world. Growing up, I enjoyed exploring different digital tools and learning how websites functioned. This
@@ -39,7 +56,7 @@
                     engaging online experiences.</p>
             </section>
 
-            <section>
+            <section id="career_goals">
                 <h2>Career Goals</h2>
                 <p>I am currently pursuing a major in Web Development. My professional goal is to
                     become a
@@ -47,7 +64,7 @@
                     experiences. I am passionate about coding, design, and the ever-evolving world of technology.</p>
             </section>
 
-            <section>
+            <section id="past_cousework">
                 <h2>Past Cousework</h2>
                 <p>Throughout my academic journey, I have taken several courses that have helped me build a strong foundation in
                     technology and programming. These include introductory courses in coding, design principles, and computer science.
@@ -55,7 +72,7 @@
                     problem-solving skills and the importance of writing clean, efficient code</p>
             </section>
 
-            <section>
+            <section id="reasons">
                 <h2>Reasons For Taking This Class</h2>
                 <p>I chose to take this web development class because it aligns perfectly with my career goals and will help me refine
                     my skills, explore new technologies, and gain hands-on experience in building real-world projectsI chose to take this
@@ -68,7 +85,7 @@
                     learn advanced techniques and collaborate with classmates to enhance my problem-solving abilities.</p>
             </section>
 
-            <section>
+            <section id="hobbies">
                 <h2>Hobbies</h2>
                 <p>Beyond academics, I enjoy: </p>
                 <ul>
@@ -78,7 +95,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section id="conclusion">
                 <h2>Conclusion</h2>
                 <p>My background and interests have shaped my passion for web development, and I am excited to continue learning and
                     growing in this field. Through this class, I hope to gain valuable skills that will bring me closer to achieving my
@@ -86,10 +103,25 @@
                 </p>
             </section>
         </main>
-        <footer>
-            <p class="footer"><a href="https://www.dallascollege.edu/pages/default.aspx" target="_blank"><i class="fa-solid fa-link"></i> Dallas College </a></p>
-            <p class="footer"><a href="mailto:mukudzeichisenwa@gmail.com"><i class="fa-solid fa-envelope"></i>mukudzeichisenwa@gmail.com </a></p>
-            <strong>&copy; 2025</strong>
+        <footer class="footer-container">
+            <div class="footer-column">
+                <a href="https://www.dallascollege.edu/pages/default.aspx" target="_blank"><i class="fa-solid fa-link"></i>Dallas College </a><br>
+                <a href="https://chat.openai.com"><i class="fa-solid fa-link"></i>ChatGPT</a><br>
+                <a href="https://www.microsoft.com/en-us/ai"><i class="fa-solid fa-link"></i>Microsoft AI</a>
+            </div>
+
+            <div class="footer-center">
+                <p class="footer"><a href="mailto:mukudzeichisenwa@gmail.com"><i class="fa-solid fa-envelope"></i>mukudzeichisenwa@gmail.com </a></p>
+                <strong class="copyright">&copy; 2025</strong>
+            </div>
+
+            <div class="footer-column">
+                <a href="index.html"><i class="fa-solid fa-house"></i>Home</a><br>
+                <a href="blog.html"><i class="fa-solid fa-blog"></i>Blog</a><br>
+                <a href="media.html"><i class="fa-solid fa-play"></i>Media</a><br>
+                <a href="team.html"><i class="fa-solid fa-user"></i>Team</a>
+            </div>
+
         </footer>
     </body>
 </html>

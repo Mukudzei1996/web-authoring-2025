@@ -42,7 +42,7 @@ body {
 	height: auto;
 }
 
-#image1, #image2, #image3, #image4, #profpic{
+#image1, #image2, #image3, #image4{
     width: 100%;
     max-width: 550px;
     min-width: 200px;
@@ -74,6 +74,10 @@ footer {
 padding: 10px;
 }
 
+.nav-list{
+padding: 5px;
+}
+
 .sign-in {
     margin-left: auto;
 }
@@ -102,4 +106,42 @@ padding: 10px;
     padding: 20px;
   }
 
+.grid_container {
+    display: grid;
+    grid-template-rows: [header-start] 1fr [content-start] auto [footer-start] 0.5fr;
+    grid-template-columns: [nav] 1fr [section] 3fr [aside] 1fr;
+    grid-template-areas:
+      "head head head"
+      "nav main aside"
+      "foot foot foot";
+  }
  
+.header {
+    grid-area: head;
+    align-content: center;
+
+
+  }
+
+.navigation{
+    grid-area: nav;
+    
+    background-color: #609CE1;
+    font-size: 20px;
+
+}
+
+.aside{
+    grid-area: aside;
+    
+    background-color: #609CE1;
+}
+
+.main{
+    grid-area: main;
+    
+    padding: 5%;
+}
+  .footer-container{
+    grid-area: foot;
+  }
