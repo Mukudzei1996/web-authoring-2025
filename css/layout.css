@@ -8,9 +8,11 @@ header {
     border-width: 3px;
     border-radius: 10px;
     padding: 20px;
+    
+}
+.header{
     height: 300px;
 }
-
 h1{
     margin: 10px;;
 }
@@ -22,6 +24,7 @@ body {
     border-width: 3px;
     border-radius: 10px;
     padding: 20px;
+   
 }
 
 .figureblog {
@@ -84,12 +87,10 @@ padding: 5px;
 
 .team{
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex: 0 1 auto;
+    
 }
 
-.member{    
+.member_container{    
     border-style: solid;
     border-color: #091D34;
     border-radius: 10px;
@@ -145,3 +146,57 @@ padding: 5px;
   .footer-container{
     grid-area: foot;
   }
+
+/*Media Query for mobile viewport*/
+@media only screen and ( max-width: 580px ) {
+header{
+    min-height: 40vh;
+}
+.team{
+    display: flex;
+    flex-direction: column;}
+
+.member_container{
+    display: flex;
+    flex-direction: column;
+    
+    }
+    
+.heading{font-size: 50px;}
+.navflex{flex-direction: column;
+        padding:0%;
+        font-size: medium;}
+.nav-items{padding:0%;}
+.sign-in {margin-left: auto;}
+.footer-container{
+    flex-direction: column;
+}
+}
+
+/*Media Query for tablet viewport*/
+@media only screen and ( max-width: 780px ) {
+.team{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "member_1"
+      "member_2"
+      "member_3";
+  }
+.member_container{
+    display: flex;
+  }
+.heading{font-size: 50px;}
+.navflex{
+    padding:0%;
+    font-size: medium;}
+.nav-items{padding:2%;}
+
+}
+
+/*Media query for desktop viewport*/
+@media only screen and ( min-width: 781px ) {
+.team{display: flex;}
+    
+}
