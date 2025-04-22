@@ -1,27 +1,93 @@
-# Student Project Upload Guide  
+# Responsive & Accessible Product Gallery
 
-## Description  
+## Description
 
-Students will complete weekly projects following the assignment instructions and upload the project files to their GitHub repository using VS Code. This workflow is essential throughout the program, allowing students to test their sites by posting assignments online and viewing them in a browser, just as the world would. Mastering this process is crucial for success in the program.  
+This project is a responsive and accessible product gallery built using modern CSS techniques. It demonstrates a strong understanding of CSS3 features while adhering to best practices for web design, accessibility, and responsiveness. The gallery uses reusable color themes, responsive layouts, CSS variables, and modern enhancements such as nesting, transitions, animations, and container queries.
 
-## Requirements  
+---
 
-To complete this assignment, follow these steps:  
+## Features
 
-1. Read **Chapters 1-3** in the textbook  
-2. Review the attached articles linked below.  
-3. Copy and paste the provided script into an **HTML text editor** (such as VS Code).  
-4. Do **not** add any CSS styles (except those explicitly required), images, or JavaScript. This assignment should focus solely on **HTML markup**.  
-5. Enhance the page by adding **information about yourself** and your reasons for taking this class. You may use ChatGPT to assist with content creation, but the final content should reflect your personal perspective.  
-6. Save the file as **test.html**.  
+- **Responsive Layout**: Utilizes CSS Grid and Flexbox to create a product gallery layout that adapts to various screen sizes.
+- **CSS Variables**: A consistent theming system using variables for colors, text, and backgrounds.
+- **Accessible Design**: Semantic HTML and proper color contrast for enhanced usability.
+- **Modern Enhancements**: Includes transitions, animations, and container queries for a modern user experience.
 
-## Submission  
+---
 
-Once your **test.html** file is complete, follow these steps to upload it to GitHub:  
+## Page Structure
 
-1. Open **VS Code** and navigate to your project folder.  
-2. Save the HTML file inside the folder.  
-3. Initialize a Git repository (if not already done) using:  
+- **Header**: Contains the site title/logo and a responsive navigation menu.
+- **Nav**: Provides links to other pages within the site.
+- **Main**: Hosts a product gallery with at least six products.
+- **Footer**: Displays contact information and/or additional links.
 
-   ```sh
-   git init
+---
+
+## Product Card Details
+
+Each product card includes:
+- A product image
+- Product name
+- Price
+- "View Details" button with hover effect
+
+---
+
+## Styling Highlights
+
+### Color Palette
+
+Defined in the `:root` selector using CSS variables:
+- `--primary-color`
+- `--secondary-color`
+- `--accent-color`
+- `--light-text`
+- `--dark-text`
+
+> All color combinations are tested for adequate contrast using the [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
+
+### Reusability
+
+- Reusable color classes: `.card-primary`, `.card-secondary`, etc.
+- Theming consistency across headers, buttons, and backgrounds using variables.
+
+### Modern CSS Techniques
+
+- **Nesting**: CSS rules are organized for readability and maintainability.
+- **Typography**: Responsive font sizes implemented using the `clamp()` function.
+- **Borders & Shadows**: Use of `border-radius` and `box-shadow` for visual enhancement.
+- **Container Queries**: Components adapt based on container size.
+- **Transitions**: Smooth hover effects on interactive elements.
+- **Animations**: At least one element (not a button or image) animated using `@keyframes`.
+
+---
+
+## Accessibility Features
+
+- Semantic HTML elements (e.g., `<main>`, `<nav>`, `<footer>`, `<section>`)
+- Appropriate ARIA roles (where necessary)
+- Text and background colors tested for sufficient contrast
+
+---
+
+## Color Palette Reference
+
+A dedicated reference page is included to display each color in the palette along with its intended usage (e.g., primary buttons, headers, backgrounds, etc.).
+
+---
+
+## Getting Started
+
+To view the project:
+1. Clone the repository or download the files.
+2. Open `index.html` in a web browser.
+3. Explore the responsive layout and interactive features.
+
+---
+
+## Author
+
+Mukudzei Chisenwa
+
+---
