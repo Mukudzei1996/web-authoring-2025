@@ -41,6 +41,13 @@ body {
     color: var(--text-dark);
     margin: 0;
     padding: 0;
+
+    margin: 8px;
+    border-color: var(--primary-color);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 20px;
   }
 
   /* Header */
@@ -49,6 +56,11 @@ header {
     padding: 2rem;
     color: var(--primary-color);
     
+    border-color: var(--primary-color);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    padding: 20px;
   }
 
 .heading{
@@ -58,6 +70,16 @@ header {
     font-size: 70px;
     line-height: 1.2;
     color: var(--primary-color)
+}
+
+#logo {
+  position: absolute;
+top: 3rem;
+right: 10%;
+z-index: 5;
+width: auto;
+max-width: 15vw;
+height: auto;
 }
   
   /* Navigation */
@@ -119,6 +141,12 @@ header {
 
 .footer-container{
   background: linear-gradient(to right,  #609ce1 0%,#2989d8 29%,#133863 71%);
+
+  border-color: var(--primary-color);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px;
+  padding: 10px;
 }
 .contact{
 text-align: center;
