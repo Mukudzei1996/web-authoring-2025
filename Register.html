@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <title>Registration Form</title>
+</head>
+<body class="bg-info-subtle">
+  <h1 class="container text-center">REGISTRATION FORM</h1>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success-subtle">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="blog.html" >Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="media.html">Media</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Team</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Register.html">Register</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <div class="container pt-4 pb-4 bg-primary-subtle shadow">
+    <h2 class="text-center">Register Here</h2>
+    <form action="mailto:mukudzeichisenwa@gmail.com" method="post" enctype="text/plain">
+      <!-- Name -->
+      <div class="col-12 col-md-8 col-lg-12">
+        <label for="name"class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required autofocus /><br><br>
+      </div>
+      <!-- Email -->
+      <div class="col-12 col-md-8 col-lg-12">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required /><br><br>
+      </div>
+      <!-- Phone -->
+      <div class="col-12 col-md-8 col-lg-12">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required /><br><br>
+      </div>
+      <!-- Password -->
+      <div class="col-12 col-md-8 col-lg-12">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required /><br><br>
+      </div>
+      <!-- Notifications -->
+      <div>
+        <label>
+          <input class="form-check-input" type="checkbox" name="notifications" checked />
+          I would like to receive notifications
+        </label><br><br>
+      </div>
+      <!-- Preferred Contact Method -->
+      <p>Preferred Contact Method</p>
+      <div>
+        <label>
+          <input class="form-check-input" type="radio" name="contact" value="email" checked />
+          Email
+        </label>
+        <label>
+          <input class="form-check-input" type="radio" name="contact" value="phone" />
+          Phone
+        </label><br><br>
+      </div>
+      <!-- Interests Dropdown -->
+      <label for="interest">Select Your Interest</label>
+      <div>
+        <select id="interest" name="interest">
+          <option value="gardening">Gardening</option>
+          <option value="cooking">Cooking</option>
+          <option value="reading">Reading</option>
+          <option value="traveling">Traveling</option>
+          <option value="tech">Technology</option>
+        </select><br><br>
+      </div>
+      <!-- Date -->
+      <div>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" value="<?= date('Y-m-d') ?>" /><br><br>
+      </div>
+      <!-- Buttons -->
+      <div>
+        <button type="reset" class="btn btn-primary btn-lg">Start Over</button>
+        <button type="submit" class="btn btn-primary btn-lg">Register</button>
+      </div>
+    </form>
+  </div>
+
+   <!-- Footer -->
+   <footer class="container text-center p-4">
+    <div class="row">
+      <div class="col">
+          <a href="https://www.dallascollege.edu/pages/default.aspx" target="_blank" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"><i class="fa-solid fa-link"></i>Dallas College </a><br>
+          <a href="https://chat.openai.com" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"><i class="fa-solid fa-link"></i>ChatGPT</a><br>
+          <a href="https://www.microsoft.com/en-us/ai" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"><i class="fa-solid fa-link"></i>Microsoft AI</a>
+      </div>
+      <div class="col">
+          <p class="footer"><a href="mailto:mukudzeichisenwa@gmail.com" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"><i class="fa-solid fa-envelope"></i>mukudzeichisenwa@gmail.com </a></p>
+          <strong class="copyright">&copy; 2025</strong>
+      </div>
+      <div class="col">
+          <a href="index.html" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"><i class="fa-solid fa-house"></i>Home</a><br>
+          <a href="blog.html" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"><i class="fa-solid fa-blog"></i>Blog</a><br>
+          <a href="media.html" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"><i class="fa-solid fa-play"></i>Media</a><br>
+          <a href="team.html"class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover"><i class="fa-solid fa-user"></i>Team</a>
+      </div>
+    </div>
+
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
